@@ -12,3 +12,36 @@ The **YouTube Comment Summarizer** is a web-based tool built using **Streamlit**
 - `comments.py`: Handles fetching comments from YouTube via YouTube Data API.
 - `app.py`: Main Streamlit app to interact with the user and display the summarized comments.
 - `util.py`: Contains the logic for tokenization and summarization using Google Gemini via LangChain.
+## Example Workflow
+
+1. **Input**: Paste the URL of a YouTube video.
+    - Example: `https://www.youtube.com/watch?v=xyz123`
+  
+2. **Processing**: The tool will fetch the comments using the YouTube API, tokenize them, and then generate a summary using Google Gemini and LangChain.
+
+3. **Output**: A summary of the comments will be displayed.
+
+## Dependencies
+
+- `streamlit`: For building the web interface.
+- `googleapiclient`: For YouTube API integration.
+- `pytube`: To extract the video ID from YouTube URLs.
+- `openai`: For GPT-4 based summarization (if needed).
+- `langchain`: For advanced text processing and summarization.
+- `langchain_google_genai`: To interact with Google Gemini for generating summaries.
+
+Install them via `pip` using the `requirements.txt` file.
+
+## API Keys
+This project uses the following APIs:
+- **YouTube Data API**: For fetching YouTube comments.
+- **Google Gemini**: For generating summaries via LangChain.
+- **OpenAI GPT-4**: As a backup for summarization.
+
+## Contributing
+Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request.
+
+## Acknowledgments
+- [YouTube Data API](https://developers.google.com/youtube/v3)
+- [LangChain](https://langchain.com/)
+- [Google Gemini](https://developers.google.com/ai/gemini)
