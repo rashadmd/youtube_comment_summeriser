@@ -6,7 +6,7 @@ from utils import get_summary
 st.title("Youtube Comments Summarizer")
 
 st.write(
-    "Use this tool to generate summaries from comments under any Youtube video."
+    "UUse this tool to generate summaries from comments under any Youtube video."
         "The Tool uses Google Gemini paired with Lang Chain to generate the summaries."
         )
 

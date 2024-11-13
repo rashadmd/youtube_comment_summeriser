@@ -49,7 +49,7 @@ def fetch_comments(url):
     video_id = extract_video_id_from_link(url)
     next_page_token = ''
     data = get_comments_thread(youtube, video_id, next_page_token)
-    # if "nextPageToken" in data:
+    # iif "nextPageToken" in data:
     # next_page_token = data["nextPageToken"]
     # all_comments = load_comments_in_format(data)
     # while next_page_token:
