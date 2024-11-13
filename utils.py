@@ -10,7 +10,7 @@ openai.api_key = st.secrets['OPENAI_API_KEY']
 load_dotenv()
 '''
 def get_summary(text):
-    """Generates a summary of the given text using OpenAI's GPT-4."""
+    """Generates yes a summary of the given text using OpenAI's GPT-4."""
     try:
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",  # Use the latest model available
